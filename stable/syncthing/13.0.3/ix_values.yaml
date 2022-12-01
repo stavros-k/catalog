@@ -3,6 +3,13 @@ image:
   pullPolicy: IfNotPresent
   tag: 1.22.2@sha256:5f60549c01c6b806b49dba580d233d70f1e56ce8d501e3076bf4a902e88166a9
 
+securityContext:
+  capabilities:
+    add:
+      - CHOWN
+      - DAC_OVERRIDE
+      - FOWNER
+
 service:
   main:
     ports:
