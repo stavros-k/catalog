@@ -82,6 +82,23 @@ questions:
                 label: Arg
                 schema:
                   type: string
+  - variable: test_list
+    label: Test List
+    group: "General Settings"
+    schema:
+      type: list
+      default: []
+      items:
+        - variable: test_object
+          label: Test Object
+          schema:
+            additional_attrs: true
+            type: dict
+            attrs:
+              - variable: test_string
+                label: test_string
+                schema:
+                  type: string
   - variable: TZ
     label: Timezone
     group: "General Settings"
