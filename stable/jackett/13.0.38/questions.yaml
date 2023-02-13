@@ -90,6 +90,32 @@ questions:
       default: "Etc/UTC"
       $ref:
         - "definitions/timezone"
+
+  - variable: Null_True_and_Required_False
+    label: Null_True_and_Required
+    group: "General Settings"
+    schema:
+      type: int
+      "null": true
+      required: false
+
+  - variable: Null_False_and_Required_False
+    label: Null_False_and_Required_False
+    group: "General Settings"
+    schema:
+      type: int
+      "null": false
+      required: false
+
+  - variable: Null_False_and_Required_True
+    label: Null_False_and_Required_True
+    group: "General Settings"
+    schema:
+      type: int
+      "null": false
+      required: true
+
+
   - variable: envList
     label: Extra Environment Variables
     description: "Please be aware that some variables are set in the background, adding duplicates here might cause issues or prevent the app from starting..."
