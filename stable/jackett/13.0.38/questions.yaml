@@ -92,7 +92,7 @@ questions:
         - "definitions/timezone"
 
   - variable: Null_True_and_Required_False
-    label: Null_True_and_Required
+    label: Null_True_and_Required_False
     group: "General Settings"
     schema:
       type: int
